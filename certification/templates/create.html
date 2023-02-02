@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    {% if update %}
+        <h1> Update record</h1>
+    {% else %}
+        <h1>Create new record</h1>
+    {% endif %}
+<!--    page method type is {{method}} <br />-->
+<!--    first name is {{first_name}} <br />-->
+<!--    last name is {{last_name}} <br />-->
+
+
+    <form method="POST" action="#" enctype='multipart/form-data'>
+        {% csrf_token %}
+
+        <table>
+            {{ form }}
+        </table>
+
+        {% if update %}
+            <input type="submit" value="update record" />
+        {% else %}
+            <input type="submit" value="create new record" />
+        {% endif %}
+
+    </form>
+
+{% endblock %}

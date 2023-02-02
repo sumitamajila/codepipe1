@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Certification Form</h1>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+
+  <label for="cname">Certification name:</label>
+  <input type="text" id="cname" name="cname"><br><br>
+
+  <p>
+  <label for="cerdate">Certification Date:</label>
+  <input type="date" id="cerdate" name="cerdate">
+  <input type="submit">
+  </p>
+
+  <p>
+  <label for="cost">Cost :</label>
+  <input type="number" id="cost" name="cost">
+  <input type="submit">
+  </p>
+  
+
+  <p>
+  <label for="marks">Marks :</label>
+  <input type="number" id="marks" name="marks">
+  <input type="submit">
+  </p>
+
+  
+  <p>
+  <action="/action_page.php">
+  <label for="validity">Validity (between 1 and 5):</label>
+  <input type="number" id="validity" name="validity" min="1" max="5">
+  <input type="submit">
+  </p>
+
+
+  
+  <p>
+  <action="/action_page.php" method="get">
+  <label for="browser">Choose your city from the list:</label>
+  <input list="City" name="city" id="city">
+  <datalist id="City">
+    <option value="Kolkata">
+    <option value="Pune">
+    <option value="Delhi">
+    <option value="Bilaspur">
+    <option value="Normal">
+  </datalist>
+  <input type="submit">
+  </p>
+
+
+</form>
+
+</body>
+</html>
